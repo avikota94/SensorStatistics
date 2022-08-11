@@ -5,8 +5,8 @@ case class SensorMeasurment(sensorid:String,humidity : String)
 object SensorStatisticsRun {
 
   def main(args: Array[String]): Unit = {
-    var dir= args(0)
-    //var dir = "C:\\SenSorStatisticUsingSparkScala\\resources\\"
+    //var dir= args(0)
+    var dir = "C:\\SenSorStatisticUsingSparkScala\\resources\\"
 
     val sensorObj=new SensorStatisticsDTO()
     val noOfProcessedFile=sensorObj.numOfProcessedFiles(dir)
